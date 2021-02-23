@@ -102,7 +102,7 @@ def book_detail(book_id):
         return redirect(url_for('main.book_detail', book_id=book_id))
 
     return render_template('book_detail.html', book=book, form=form)
-
+ 
 
 @main.route('/profile/<username>')
 def profile(username):
