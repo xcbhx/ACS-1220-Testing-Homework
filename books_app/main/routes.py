@@ -82,7 +82,7 @@ def create_genre():
     # if form was not valid, or was not submitted yet
     return render_template('create_genre.html', form=form)
 
-
+ 
 @main.route('/book/<book_id>', methods=['GET', 'POST'])
 def book_detail(book_id):
     book = Book.query.get(book_id)
