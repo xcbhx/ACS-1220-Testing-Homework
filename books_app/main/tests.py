@@ -2,7 +2,7 @@ import os
 import unittest
 
 from datetime import date
- 
+
 from books_app import app, db, bcrypt
 from books_app.models import Book, Author, User, Audience
 
@@ -212,7 +212,7 @@ class MainTests(unittest.TestCase):
         pass
 
     def test_profile_page(self):
-        # TODO: Make a GET request to the /profile/1 route
+        # TODO: Make a GET request to the /profile/me1 route
 
         # TODO: Verify that the response shows the appropriate user info
         pass
