@@ -1,5 +1,5 @@
 """Create database models to represent tables."""
-from books_app import db
+from books_app.extensions import db
 from sqlalchemy.orm import backref
 from flask_login import UserMixin
 import enum

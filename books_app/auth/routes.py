@@ -3,10 +3,9 @@ from flask_login import login_user, logout_user, login_required, current_user
 
 from books_app.models import Book, Author, Genre, User
 from books_app.auth.forms import SignUpForm, LoginForm
-from books_app import bcrypt
 
 # Import app and db from events_app package so that we can run app
-from books_app import app, db
+from books_app.extensions import app, db, bcrypt
 
 auth = Blueprint("auth", __name__)
 
