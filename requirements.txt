@@ -11,7 +11,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 lazy-object-proxy==1.5.2
 MarkupSafe==1.1.1
-psycopg2-binary
+psycopg2==2.9.2
 pycparser==2.20
 python-dotenv==0.15.0
 six==1.16.0
