@@ -1,8 +1,18 @@
 # Books App Part 4 (Tests)
 
+## Prerequisites
+
+In order for this project's dependencies to install, you'll need PostgreSQL running on your computer.
+
+Install it by opening your terminal, and pasting the following command:
+
+```bash
+brew install postgresql
+```
+
 ## Setup
 
-Clone this repository to your computer. 
+Clone this repository to your computer.
 
 **Take a look at the test code** in `books_app/main/tests.py`. There are several existing tests that you can use as examples.
 
