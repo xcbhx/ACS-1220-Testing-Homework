@@ -12,48 +12,50 @@ brew install postgresql
 
 ## Setup
 
-Clone this repository to your computer.
+Clone this repository to your computer. 
 
-**Take a look at the test code** in `books_app/main/tests.py`. There are several existing tests that you can use as examples.
+**Take a look at the code** - it looks a bit different than what you're used to. Namely, the code is now separated out into several files rather than being written in a single `app.py` file. Since we're now writing model and form code as well as route code, this will help us to maintain some structure and separation.
 
-**To run the code**, navigate to the project folder and run the following to install the required packages:
+**To run the code**, navigate to the project folder and run the following to create a virtual environment and install the required packages:
 
-```
-pip3 install -r requirements.txt
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 Then, copy the `.env.example` file to `.env`:
 
-```
+```bash
 cp .env.example .env
 ```
 
 Then you can run the following to run the Flask server:
 
-```
-python3 app.py
+```bash
+python app.py
 ```
 
 ## Running the Tests
 
 **To run all of the tests**, you can run the following from the root project directory:
 
-```
-python3 -m unittest discover
+```bash
+python -m unittest discover
 ```
 
 (Make sure you have unittest installed.)
 
 **To run all tests from a single file**, run the following:
 
-```
-python3 -m unittest books_app.main.tests
+```bash
+python -m unittest books_app.main.tests
 ```
 
 **To run one specific test**, you can run the following:
 
-```
-python3 -m unittest books_app.main.tests.MainTests.test_homepage_logged_in
+```bash
+python -m unittest books_app.main.tests.MainTests.test_homepage_logged_in
 ```
 
 ## Instructions
