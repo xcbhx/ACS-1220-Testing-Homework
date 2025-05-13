@@ -26,3 +26,9 @@ def load_user(user_id):
     return User.query.get(user_id)
 
 bcrypt = Bcrypt(app)
+
+from books_app.auth.routes import auth
+from books_app.main.routes import main
+
+app.register_blueprint(auth)
+app.register_blueprint(main)
